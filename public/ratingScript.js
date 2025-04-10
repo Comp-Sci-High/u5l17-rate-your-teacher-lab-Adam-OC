@@ -5,13 +5,13 @@ const ratingForm = document.getElementById("ratingForm")
 ratingForm.addEventListener("submit", async(e)=>{
     e.preventDefault()
 
-    const ratingData = new formData(ratingForm)
+    const ratingData = new FormData(ratingForm)
     const reqBody = Object.fromEntries(ratingData)
 
     const response = await fetch("/add/rating",{
         method:"POST",
         headers:{
-            "Context-Type":"application/json"
+            "Content-Type":"application/json"
         },
         body:JSON.stringify(reqBody)
     })

@@ -5,13 +5,13 @@ const teacherForm= document.getElementById("teacherForm")
 teacherForm.addEventListener("submit", async(e)=>{
     e.preventDefault()
 
-    const teacherData = new formData(teacherForm)
+    const teacherData = new FormData(teacherForm)
     const reqBody = Object.fromEntries(teacherData)
 
     const response = await fetch("/add/teacher",{
         method:"POST",
         headers:{
-            "Context-Type":"application/json"
+            "Content-Type":"application/json"
         },
         body:JSON.stringify(reqBody)
     })
