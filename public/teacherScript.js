@@ -8,7 +8,7 @@ teacherForm.addEventListener("submit", async(e)=>{
     const teacherData = new formData(teacherForm)
     const reqBody = Object.fromEntries(teacherData)
 
-    const response = await fetch("/add",{
+    const response = await fetch("/add/teacher",{
         method:"POST",
         headers:{
             "Context-Type":"application/json"
@@ -17,4 +17,5 @@ teacherForm.addEventListener("submit", async(e)=>{
     })
     const data = await response.json()
     console.log(data)
+    window.location.href = "/"
 })

@@ -6,9 +6,9 @@
   <title>Ratings</title>
   <!-- Link to the correct css file -->
 
-  <link rel="stylesheet" href="rating.css" />
+  <link rel="stylesheet" href="/ratings.css" />
   <!-- Link to the correct js file -->
-  <script src="ratingScript.js" defer></script>
+  <script src="/ratingScript.js" defer></script>
 </head>
 <body>
   <nav class="navbar">
@@ -17,9 +17,9 @@
     </div>
     <div class="nav-links">
       <!-- Link to the route for home -->
-      <a href="teachers.ejs">Teachers</a>
+      <a href="https://bug-free-spork-pjpj9p69v5w9fr976-3000.app.github.dev/">Teachers</a>
       <!-- Link to the route for ratings and comments -->
-      <a href="ratings.ejs">Comments & Ratings</a>
+      <a href="https://bug-free-spork-pjpj9p69v5w9fr976-3000.app.github.dev/ratings">Comments & Ratings</a>
     </div>
   </nav>
 
@@ -33,16 +33,16 @@
       <!-- Inside of the input tag for rating add the attributes min="1" max="5" -->
       <form id="ratingForm">
         <label>Username:</label><br>
-        <input type="type" name="username"><br>
+        <input type="text" name="username"><br>
 
         <label>Teacher:</label><br>
-        <input type="type" name="teacher"><br>
+        <input type="text" name="teacher"><br>
 
         <label>Comment:</label><br>
-        <input type="type" name="comment"><br>
+        <input type="text" name="comment"><br>
 
         <label>Rating:</label><br>
-        <input type="type" name="rating" min="1" max="5"><br>
+        <input type="text" name="rating" min="1" max="5"><br>
 
         <button type="submit">Submit</button>
       </form>
